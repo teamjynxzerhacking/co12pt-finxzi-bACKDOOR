@@ -24,8 +24,7 @@ G2L["4"] = Instance.new("UIGradient", G2L["3"]);
 G2L["4"]["Rotation"] = 50;
 G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 255))};
 
--- StarterGui.LALOL Hub Backdoor.Frame.UICorner
-G2L["5"] = Instance.new("UICorner", G2L["2"]);
+
 
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Executor
@@ -71,15 +70,13 @@ G2L["b"]["Name"] = [[Clear]];
 G2L["c"] = Instance.new("TextButton", G2L["b"]);
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["TextSize"] = 22;
-G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c"]["FontFace"] = Enum.Font.Arcade
 G2L["c"]["TextColor3"] = Color3.fromRGB(36, 236, 203);
 G2L["c"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["c"]["Name"] = [[Button]];
 G2L["c"]["Text"] = [[Clear]];
 G2L["c"]["BackgroundTransparency"] = 1;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UICorner
-G2L["d"] = Instance.new("UICorner", G2L["b"]);
 
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UIStroke
